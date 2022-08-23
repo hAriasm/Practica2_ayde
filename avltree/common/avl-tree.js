@@ -192,23 +192,23 @@ searched. */
 
     // If this node becomes unbalanced, then there are 4 cases
     // Left Left Case
-    if (balance > 1 && getBalance(root.left) >= 0)
-      return rightRotate(root);
+    if (balance > 1 && this.getBalance(root.left) >= 0)
+      return this.rightRotate(root);
 
     // Left Right Case
-    if (balance > 1 && getBalance(root.left) < 0) {
-      root.left = leftRotate(root.left);
-      return rightRotate(root);
+    if (balance > 1 && this.getBalance(root.left) < 0) {
+      root.left = this.leftRotate(root.left);
+      return this.rightRotate(root);
     }
 
     // Right Right Case
-    if (balance < -1 && getBalance(root.right) <= 0)
-      return leftRotate(root);
+    if (balance < -1 && this.getBalance(root.right) <= 0)
+      return this.leftRotate(root);
 
     // Right Left Case
-    if (balance < -1 && getBalance(root.right) > 0) {
-      root.right = rightRotate(root.right);
-      return leftRotate(root);
+    if (balance < -1 && this.getBalance(root.right) > 0) {
+      root.right = this.rightRotate(root.right);
+      return this.leftRotate(root);
     }
 
     return root;
