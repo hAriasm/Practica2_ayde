@@ -137,12 +137,12 @@ searched. */
     // If the key to be deleted is smaller than
     // the root's key, then it lies in left subtree
     if (key < root.key)
-      root.left = deleteNode(root.left, key);
+      root.left = this.deleteNode(root.left, key);
 
     // If the key to be deleted is greater than the
     // root's key, then it lies in right subtree
     else if (key > root.key)
-      root.right = deleteNode(root.right, key);
+      root.right = this.deleteNode(root.right, key);
 
     // if key is same as root's key, then this is the node
     // to be deleted
@@ -169,13 +169,13 @@ searched. */
 
         // node with two children: Get the inorder
         // successor (smallest in the right subtree)
-        let temp = minValueNode(root.right);
+        let temp = this.minValueNode(root.right);
 
         // Copy the inorder successor's data to this node
         root.key = temp.key;
 
         // Delete the inorder successor
-        root.right = deleteNode(root.right, temp.key);
+        root.right = this.deleteNode(root.right, temp.key);
       }
     }
 
@@ -184,11 +184,11 @@ searched. */
       return root;
 
     // STEP 2: UPDATE HEIGHT OF THE CURRENT NODE
-    root.height = max(height(root.left), height(root.right)) + 1;
+    root.height = this.max(this.height(root.left), this.height(root.right)) + 1;
 
     // STEP 3: GET THE BALANCE FACTOR OF THIS NODE (to check whether
     // this node became unbalanced)
-    let balance = getBalance(root);
+    let balance = this.getBalance(root);
 
     // If this node becomes unbalanced, then there are 4 cases
     // Left Left Case
