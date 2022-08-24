@@ -26,3 +26,11 @@ console.log(
       "Preorder traversal of the" + "constructed AVL tree is <br>"
 );
 tree.preOrder(tree.root);
+
+let val = "10";
+console.log("buscando nodo " + val);
+tree.root = tree.searchNode(tree.root, val);
+if (tree.root != null)
+      console.log("Resultado: " + tree.root.key);
+else
+      console.log("No encontrado");
