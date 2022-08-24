@@ -94,6 +94,15 @@ class AVLTree {
     return current;
   }
 
+  maxValueNode(node) {
+    let current = node;
+
+    while (current.right != null)
+      current = current.right;
+
+    return current;
+  }
+
   deleteNode(root, key) {
     if (root == null)
       return root;

@@ -27,10 +27,17 @@ console.log(
 );
 tree.preOrder(tree.root);
 
+
+
 let val = "10";
 console.log("buscando nodo " + val);
-tree.root = tree.searchNode(tree.root, val);
-if (tree.root != null)
-      console.log("Resultado: " + tree.root.key);
+let result;
+result = tree.searchNode(tree.root, val);
+if (result != null)
+      console.log("Resultado: " + result.key);
 else
       console.log("No encontrado");
+
+      
+console.log("Min: " + tree.minValueNode(tree.root).key);
+console.log("Max: " + tree.maxValueNode(tree.root).key);
