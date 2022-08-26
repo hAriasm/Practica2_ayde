@@ -1,0 +1,9 @@
+*.exe
+/cpp/.vscode
+/.vscode
+/latex/informe_latex/.aux
+/latex/informe_latex/.bbl
+/latex/informe_latex/.blg
+/latex/informe_latex/.log
+/latex/informe_latex/.out
+/latex/informe_latex/.synctex
