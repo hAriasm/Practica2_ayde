@@ -14,6 +14,11 @@ function exportDotFile(data) {
       console.log("archivo " + randomTmpfile + " generado exitosamente\n");
 }
 
+function print() {
+      tree.printInOrder(tree.root);
+      exportDotFile(tree.output);
+}
+
 
 var tree = new AVLTree();
 
@@ -30,27 +35,23 @@ tree.root = tree.insert(tree.root, 50);
 tree.root = tree.insert(tree.root, 62);
 
 console.log("Arbol inicial");
-tree.print(tree.root);
-exportDotFile(tree.output);
+print();
 
 console.log("Insertando 51");
 tree.root = tree.insert(tree.root, 51);
-tree.print(tree.root);
-exportDotFile(tree.output);
+print();
 
 let val = "18";
 console.log("Eliminando " + val);
 tree.root = tree.deleteNode(tree.root, val);
 console.log("Arbol despues de eliminar el nodo " + val);
-tree.print(tree.root);
-exportDotFile(tree.output);
+print();
 
 val = "22";
 console.log("Eliminando " + val);
 tree.root = tree.deleteNode(tree.root, val);
 console.log("Arbol despues de eliminar el nodo " + val);
-tree.print(tree.root);
-exportDotFile(tree.output);
+print();
 
 console.log("buscando nodo " + val);
 let result;
@@ -63,4 +64,5 @@ else
 
 console.log("Min: " + tree.minValueNode(tree.root).key);
 console.log("Max: " + tree.maxValueNode(tree.root).key);
+
 

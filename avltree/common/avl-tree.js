@@ -184,22 +184,22 @@ class AVLTree {
     return root;
   }
 
-  preOrder(node) {
+  inOrder(node) {
     if (node != null) {
       if (node.left != null) {
         this.output += "\n  " + node.key + " -- " + node.left.key + ";";
-        this.preOrder(node.left);
+        this.inOrder(node.left);
       }
       if (node.right != null) {
         this.output += "\n  " + node.key + " -- " + node.right.key + ";";
-        this.preOrder(node.right);
+        this.inOrder(node.right);
       }
     } 
   }
 
-  print(node) {
+  printInOrder(node) {
     this.output = "";
-    this.preOrder(node);
+    this.inOrder(node);
   }
 }
 
