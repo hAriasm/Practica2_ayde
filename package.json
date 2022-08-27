@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "unique-filename": "^2.0.1"
+  }
+}

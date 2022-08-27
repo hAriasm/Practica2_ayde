@@ -1,8 +1,10 @@
 const{Node}= require ('./node');
 
 class BinarySearchTree{
+    output = "";
     constructor (data){
-        this.root=null;
+
+                this.root=null;
     }
 
     insert(data){
@@ -23,19 +25,25 @@ class BinarySearchTree{
             else this.insertNode(Node.right, newNode);
         }
     }
-    //PREORDER
-    preOrder(Node) {
+    // inORDER
+    inOrder(Node) {
       if (Node != null){
         if(Node.left != null){
-            console.log(" "+Node.data+"->"+Node.left.data+";");
-            this.preOrder(Node.left);
+          this.output += "\n  " + Node.key + " -- " + Node.left.key + ";";
+          this.inOrder(Node.left);
         }
         if(Node.right !== null){
-            console.log(" "+Node.data+"->"+Node.right.data+";");
-            this.preOrder(Node.right);
+          this.output += "\n  " + Node.key + " -- " + Node.right.key + ";";
+          this.inOrder(Node.right);
         }
+      }
     }
-  }
+
+    printInOrder(Node) {
+      this.output = "";
+      this.inOrder(Node);
+    }
+
     // ENCONTRAR VALOR MAXIMO
     findMax(Node){
         if (Node==null)
@@ -69,28 +77,24 @@ class BinarySearchTree{
       
     }
     // BUSCAR
-    search(data)
-    {
-        if(this.root)
-        {
-            return "No se encontro el valor";    
-        }
-        let Node = this.root;
 
-    while(Node){
-        if(data<Node.data){
-            Node=Node.left;
-        }
-        else if(data>Node.data){
-            Node=Node.right;            
-        }
-        else if(Node.data===data){
-            return Node;
-        }
-    }
+    searchNode(root, data) {
+      if (root == null)
+        return root;
+  
+      if (root.data == data)
+        return root;
+  
+      else if (data < root.data)
+        return this.searchNode(root.left, data);
+  
+      else if (data > root.data)
+        return this.searchNode(root.right, data);
+  
+      return root;
     }
 
-
+    // ELIMINAR
     remove(data){
         if(!this.root){
           return false;
