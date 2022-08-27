@@ -14,22 +14,29 @@ class BinarySearchTree{
             this.insertNode(this.root,newNode);
         }
     }
-    insertNode(node,newNode){
-        if(newNode.data < node.data){
-            if(node.left === null) node.left=newNode;
-            else this.insertNode(node.left,newNode);
+    insertNode(Node,newNode){
+        if(newNode.data < Node.data){
+            if(Node.left === null) Node.left=newNode;
+            else this.insertNode(Node.left,newNode);
         } else{
-            if(node.right === null) node.right=newNode;
-            else this.insertNode(node.right, newNode);
+            if(Node.right === null) Node.right=newNode;
+            else this.insertNode(Node.right, newNode);
         }
     }
-    inOrder(node) {
-        if(node !== null){
-            this.inOrder(node.left);
-            console.log(node.data);
-            this.inOrder(node.right);
+    //PREORDER
+    preOrder(Node) {
+      if (Node != null){
+        if(Node.left != null){
+            console.log(" "+Node.data+"--"+Node.left.data+";");
+            this.preOrder(Node.left);
+        }
+        if(Node.right !== null){
+            console.log(" "+Node.data+"--"+Node.right.data+";");
+            this.preOrder(Node.right);
         }
     }
+  }
+    // ENCONTRAR VALOR MAXIMO
     findMax(Node){
         if (Node==null)
         return Number.MIN_VALUE;
@@ -45,6 +52,7 @@ class BinarySearchTree{
         return res;
 
     }
+    // ENCONTRAR VALOR MINIMO
     findMin(Node) {
         if (Node == null) return 2147483647;
  
@@ -52,72 +60,116 @@ class BinarySearchTree{
         var lres = this.findMin(Node.left);
         var rres = this.findMin(Node.right);
  
-        if (lres < res) res = lres;
-        if (rres < res) res = rres;
+        if (lres < res) 
+        res = lres;
+        if (rres < res) 
+        res = rres;
         return res;
 
       
-    }  
-    search(Node, data)
-    {
-      if(Node === null)
-        return null;
-     else if(data < Node.data)
-        return this.search(Node.left, data);
-     else if(data > Node.data)
-        return this.search(Node.right, data);
-    else
-        return Node;
     }
+    // BUSCAR
+    search(data)
+    {
+        if(this.root)
+        {
+            return "No se encontro el valor";    
+        }
+        let Node = this.root;
+
+    while(Node){
+        if(data<Node.data){
+            Node=Node.left;
+        }
+        else if(data>Node.data){
+            Node=Node.right;            
+        }
+        else if(Node.data===data){
+            return Node;
+        }
+    }
+    }
+
+
+    remove(data){
+        if(!this.root){
+          return false;
+        }
     
-    remove(data)
-    {
-    this.root = this.removeNode(this.root, data);
-    }
-
-    removeNode(Node, key)
-    {
-      if(Node === null)
-        return null;
-     else if(key < Node.data)
-    {
-        Node.left = this.removeNode(Node.left, key);
-        return Node;
-    }
- 
-      else if(key > Node.data)
-    {
-        Node.right = this.removeNode(Node.right, key);
-        return Node;
-    }
- 
-    else
-    {
-        if(Node.left === null && Node.right === null)
-        {
-            Node = null;
-            return Node;
+        let currentNode = this.root;
+        let parentNode = null;
+    
+        while(currentNode){
+          if(data < currentNode.data){
+            parentNode = currentNode;
+            currentNode = currentNode.left;
+          } else if(data > currentNode.data){
+            parentNode = currentNode;
+            currentNode = currentNode.right;
+          } else if (currentNode.data === data) {
+            //We have a Match!
+            //Option 1: No right child
+            if (currentNode.right === null) {
+              if (parentNode === null) {
+                this.root = currentNode.left;
+              } else {
+                
+                //if parent > current data, make current left child a child of parent
+                if(currentNode.data < parentNode.data) {
+                  parentNode.left = currentNode.left;
+                
+                //if parent < current data, make left child a right child of parent
+                } else if(currentNode.data > parentNode.data) {
+                  parentNode.right = currentNode.left;
+                }
+              }
+            
+            //Option 2: Right child which doesnt have a left child
+            }else if (currentNode.right.left === null) {
+              currentNode.right.left = currentNode.left;
+              if(parentNode === null) {
+                this.root = currentNode.right;
+              } else {
+                
+                //if parent > current, make right child of the left the parent
+                if(currentNode.data < parentNode.data) {
+                  parentNode.left = currentNode.right;
+                
+                //if parent < current, make right child a right child of the parent
+                } else if (currentNode.data > parentNode.data) {
+                  parentNode.right = currentNode.right;
+                }
+              }
+            
+            //Option 3: Right child that has a left child
+            }else{
+              //Find the Right child's left most child
+              let leftmost = currentNode.right.left;
+              let leftmostParent = currentNode.right;
+              while(leftmost.left !== null) {
+                leftmostParent = leftmost;
+                leftmost = leftmost.left;
+              }
+              //Parent's left subtree is now leftmost's right subtree
+              leftmostParent.left = leftmost.right;
+              leftmost.left = currentNode.left;
+              leftmost.right = currentNode.right;
+    
+              if(parentNode === null) {
+                this.root = leftmost;
+              } else {
+                if(currentNode.data < parentNode.data) {
+                  parentNode.left = leftmost;
+                } else if(currentNode.data > parentNode.data) {
+                  parentNode.right = leftmost;
+                }
+    
+            }
+          }
+          return true;
         }
- 
-        if(Node.left === null)
-        {
-            Node = Node.right;
-            return Node;
-        }
-         
-        else if(Node.right === null)
-        {
-            Node = Node.left;
-            return Node;
-        }
-
-        var aux = this.findMinNode(Node.right);
-        Node.data = aux.data;
- 
-        Node.right = this.removeNode(Node.right, aux.data);
-        return Node;
+      }
     }
- 
-}
+  
 }
 module.exports={BinarySearchTree};
