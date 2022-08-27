@@ -26,7 +26,7 @@
 \newcommand{\csuniversidad}{Universidad Nacional de San Agustín}
 \newcommand{\csescuela}{Maestría en Ciencia de la Computación}
 \newcommand{\cspracnr}{02}
-\newcommand{\cstema}{--}
+\newcommand{\cstema}{Estructura de datos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -87,9 +87,9 @@
 		\end{tabular}
 	\end{table}
 	
-	\section{Datos de integrantes}
+	\section{Datos de los integrantes}
         	\begin{itemize}
-        		\item Grupo: 2
+        		\item Grupo: \textbf{\large{2}}
         		\item Integrantes:
         		\begin{itemize}
         			\item EDER ALONSO AMPUERO ATAMARI
@@ -98,8 +98,8 @@
                     \item HENRRY IVAN ARIAS MAMANI
         		\end{itemize}		
         	\end{itemize}
-    \section{Url GITHUB}
-           Repositorio Github: \href{https://github.com/hAriasm/Practica2_ayed}{Práctica 2}
+    \section{Repositorio de GITHUB}
+           Url Github: \href{https://github.com/hAriasm/Practica2_ayed}{Práctica 2}
 	\section{Estructuras de Datos}
         \subsection{BTree}
             \paragraph{}
@@ -108,18 +108,37 @@
 
         \subsection{AVL}
 
-         El Merge Sort es un algoritmo recursivo bastante eficiente para ordenar un array, que tiene un orden de complejidad O(nlogn) al igual que Quick Sort. fue desarrollado en 1945 por John Von Neumann.
-
-         El Merge Sort está basado en la técnica de diseño de algoritmos Divide y Vencerás, esta técnica consiste en dividir el problema a resolver en sub problemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente  pequeños o triviales Figura
+        El árbol AVL recibe su nombre de las iniciales  de sus inventores, Georgii Adelson-Velskii y Yevgeniy Landis. Dieron a conocer esto mediante la publicación de un artículo en 1962, "Un algoritmo para organizar la información" ("Un algoritmo para organizar la información").
+        
+        Un árbol AVL es un árbol de búsqueda binaria que tiene una altura equilibrada: para cada nodo x, las alturas de los subárboles izquierdo y derecho de x difieren en 1 como máximo. Para implementar un árbol AVL, mantenemos un atributo adicional en cada nodo: x.h es la altura del nodo x. Como para cualquier otro árbol binario de búsqueda T, asumimos que T.root apunta al nodo raíz.
+        
+        El árbol AVL siempre está equilibrado de  modo que para todos los nodos, la altura de la rama izquierda no difiera en más de una unidad de la altura de la rama derecha o viceversa. Gracias a esta forma de equilibrio, la complejidad de una búsqueda en uno de estos árboles se mantiene siempre en el orden de complejidad O(log n). El factor de equilibrio puede almacenarse directamente en cada nodo o calcularse a partir de la altura de los subárboles.
+        
+        Para lograr este equilibrio, la inserción y eliminación de  nodos debe realizarse de manera especial. Si la condición de equilibrio se rompe al realizar una operación de inserción o eliminación, se debe realizar una serie de rotaciones de  nodos.
          
          \subsubsection{Resultados del experimento}
          \begin{itemize}
+            \item En la figura \ref{fig:avlBusqueda} mostramos la búsqueda del nodo 22 con resultado de no encontrado
+           \item En la figura \ref{fig:avlBusqueda} mostramos nuestro árbol inicial con 11 nodos.
+           \item En la figura \ref{fig:avlBusqueda} mostramos nuestro árbol inicial con 11 nodos.
+
            \item En la figura \ref{fig:avlInicial} mostramos nuestro árbol inicial con 11 nodos.
            \item En la figura \ref{fig:avlIsertion} mostramos el árbol luego de insertar un nodo nuevo.
            \item En la figura \ref{fig:avldelete} mostramos luego de eliminar un nodo.
            \item En la figura \ref{fig:avldelete2} mostramos luego de eliminar el nodo raíz.
          \end{itemize}
- 
+         \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=\textwidth]{img/busquedaAVL.png}
+              \caption{Árbol AVL búsqueda variada}
+              \label{fig:avlBusqueda}
+            \end{figure}
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/avltree.png}
+              \caption{Árbol AVL inicial}
+              \label{fig:avlInicial}
+            \end{figure}
             \begin{figure}[htbp]
               \centering
               \includegraphics[width=0.5\textwidth]{img/avltree.png}
@@ -154,6 +173,17 @@
         \end{itemize}
 
     \section{Referencias}
-  
+  \begin{enumerate}
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+    \item 1
+  \end{enumerate}
 
 \end{document} 
