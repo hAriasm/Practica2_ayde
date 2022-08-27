@@ -184,14 +184,14 @@ class AVLTree {
   preOrder(node) {
     if (node != null) {
       if (node.left != null) {
-        console.log(node.key + " -- " + node.left.key + ";");
+        console.log("  " + node.key + " -- " + node.left.key + ";");
         this.preOrder(node.left);
       }
       if (node.right != null) {
-        console.log(node.key + " -- " + node.right.key + ";");
+        console.log("  " + node.key + " -- " + node.right.key + ";");
         this.preOrder(node.right);
       }
-    }
+    } 
   }
 }
 

@@ -14,6 +14,10 @@ tree.root = tree.insert(tree.root, 63);
 tree.root = tree.insert(tree.root, 50);
 tree.root = tree.insert(tree.root, 62);
 tree.root = tree.insert(tree.root, 51);
+tree.root = tree.insert(tree.root, 1);
+tree.root = tree.insert(tree.root, 0);
+tree.root = tree.insert(tree.root, 19);
+tree.root = tree.insert(tree.root, 21);
 
 
 console.log(
