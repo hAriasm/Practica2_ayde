@@ -13,21 +13,23 @@ tree.root = tree.insert(tree.root, 20);
 tree.root = tree.insert(tree.root, 63);
 tree.root = tree.insert(tree.root, 50);
 tree.root = tree.insert(tree.root, 62);
-tree.root = tree.insert(tree.root, 51);
-
 
 console.log("Arbol inicial");
 tree.preOrder(tree.root);
 
-let val = "18";
-tree.root = tree.deleteNode(tree.root, val);
+console.log("Insertando 51");
+tree.root = tree.insert(tree.root, 51);
+tree.preOrder(tree.root);
 
+let val = "18";
+console.log("Eliminando " + val);
+tree.root = tree.deleteNode(tree.root, val);
 console.log("Arbol despues de eliminar el nodo " + val);
 tree.preOrder(tree.root);
 
 val = "22";
+console.log("Eliminando " + val);
 tree.root = tree.deleteNode(tree.root, val);
-
 console.log("Arbol despues de eliminar el nodo " + val);
 tree.preOrder(tree.root);
 
