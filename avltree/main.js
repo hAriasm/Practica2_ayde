@@ -19,17 +19,13 @@ function print() {
   exportDotFile(tree.output);
 }
 var tree = new AVLTree();
-executeInsertNodo();
+inicializarArbol();
 executeIniciarArbol();
-let val = "51";
-executeInsertNodo(val);
-val = "18";
-executeEliminarNodo(val);
-val = "22";
-executeEliminarNodo(val);
-executeBuscar(val);
-val = "21"
-executeBuscar(val);
+executeInsertNodo("51");
+executeEliminarNodo("18");
+executeEliminarNodo("22");
+executeBuscar("22");
+executeBuscar("21");
 executeImprimirMinimo();
 executeImprimirMaximo();
 
@@ -59,7 +55,7 @@ function executeImprimirMinimo() {
       console.log("valor Mínimo: " + tree.minValueNode(tree.root).key);
 }
 
-function executeInsertNodo() {
+function inicializarArbol() {
       tree.root = tree.insert(tree.root, 43);
       tree.root = tree.insert(tree.root, 18);
       tree.root = tree.insert(tree.root, 22);

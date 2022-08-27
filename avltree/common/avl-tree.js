@@ -89,8 +89,8 @@ class AVLTree {
   }
 
   minValueNode(node) { 
-    console.log(node.key);
-
+    let current = node;
+    
     while (current.left != null){ 
       current = current.left;
     }
