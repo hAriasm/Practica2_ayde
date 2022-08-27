@@ -1,28 +1,37 @@
 const {BinarySearchTree} = require("./common/binary-search-tree");
 const BST =new BinarySearchTree;
 
-BST.insert(15);
-BST.insert(25);
-BST.insert(10);
-BST.insert(7);
-BST.insert(22);
-BST.insert(17);
-BST.insert(13);
-BST.insert(5);
-BST.insert(9);
-BST.insert(27);
+BST.insert(41);
+BST.insert(20);
+BST.insert(65);
+BST.insert(11);
+BST.insert(29);
+BST.insert(50);
+BST.insert(91);
+BST.insert(32);
+BST.insert(72);
+BST.insert(99);
 
-
-console.log("Maximo Elemento es "
+console.log("Maximo Elemento es : "
 + BST.findMax(BST.root));
 
-console.log("Minimo elemento es "
+console.log("Minimo elemento es : "
 + BST.findMin(BST.root));
 
-console.log(BST.search(9,BST.root))
 
-BST.inOrder(BST.root)
+console.log(BST.search(15,BST.root));
 
-console.log(BST.remove(27,BST.root))
+//valor = 41
+//console.log(BST.remove(valor,BST.root));
+BST.insert(105);
+BST.insert(93);
 
-BST.inOrder(BST.root)
+console.log(BST.preOrder(BST.root));
+
+//console.log(BST.root);
+
+//console.log(BST.remove(15,BST.root));
+
+//console.log(BST.inOrder(BST.root));
+
+//console.log(BST.root);
