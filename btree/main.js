@@ -23,8 +23,8 @@ console.log(BST.search(15,BST.root));
 
 //valor = 41
 //console.log(BST.remove(valor,BST.root));
-BST.insert(105);
-BST.insert(93);
+//ST.insert(105);
+//BST.insert(93);
 
 console.log(BST.preOrder(BST.root));
 
