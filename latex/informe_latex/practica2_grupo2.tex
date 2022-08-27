@@ -13,11 +13,11 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage[normalem]{ulem}
-\usepackage{hyperref}
 \useunder{\uline}{\ul}{}
 \usepackage{svg}
-\usepackage{amsmath} 
-
+\usepackage{amsmath}  
+\usepackage{hyperref}
+  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\csemail}{vmachacaa@unsa.edu.pe}
@@ -110,21 +110,50 @@
 
          El Merge Sort es un algoritmo recursivo bastante eficiente para ordenar un array, que tiene un orden de complejidad O(nlogn) al igual que Quick Sort. fue desarrollado en 1945 por John Von Neumann.
 
-         El Merge Sort está basado en la técnica de diseño de algoritmos Divide y Vencerás, esta técnica consiste en dividir el problema a resolver en sub problemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente  pequeños o triviales.
+         El Merge Sort está basado en la técnica de diseño de algoritmos Divide y Vencerás, esta técnica consiste en dividir el problema a resolver en sub problemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente  pequeños o triviales Figura
+         
+         \subsubsection{Resultados del experimento}
+         \begin{itemize}
+           \item En la figura \ref{fig:avlInicial} mostramos nuestro árbol inicial con 11 nodos.
+           \item En la figura \ref{fig:avlIsertion} mostramos el árbol luego de insertar un nodo nuevo.
+           \item En la figura \ref{fig:avldelete} mostramos luego de eliminar un nodo.
+           \item En la figura \ref{fig:avldelete2} mostramos luego de eliminar el nodo raíz.
+         \end{itemize}
  
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/avltree.png}
+              \caption{Árbol AVL inicial}
+              \label{fig:avlInicial}
+            \end{figure}
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/avltree-insertion.png}
+              \caption{Árbol AVL con inserción }
+                \label{fig:avlIsertion}
+            \end{figure}
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/avltree-deletion.png}
+              \caption{Árbol AVL con eliminación nodo}
+            \label{fig:avldelete}
+            \end{figure}
+             \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/avltree-deletion-2.png}
+              \caption{Árbol AVL con eliminación de la raíz}
+              \label{fig:avldelete2}
+            \end{figure}
 
-\begin{figure}
-    \centering
-    \includesvg[width=0.6\columnwidth](avltree-1)
-\end{figure}
     \section{Conclusiones}
         \begin{itemize}
-                 \item  En las pruebas realizadas para el Algoritmo Quick Sort, se obtuvo tiempos de ejecución menores para el código desarrollado en lenguaje de programación Golang, y tiempos de mayor valor en la ejecución del código en lenguaje de programación Python.
-                 \item	Se observó que, para tamaños de entrada menores a 10 000 datos, los tiempos de ejecución son inconsistentes, al ejecutar el código del algoritmo Quick Sort en lenguaje Golang, presentándose en reiteradas oportunidades valores de cero.
-                 \item	En la ejecución del algoritmo Quick Sort, los valores de desviación estándar son mayores al ejecutar el código en lenguaje Python, y presentan valores menores al usar el código en C++. Para las pruebas realizadas en Python se observa que los valores de desviación estándar van en aumento respecto al tamaño de la entrada, en el caso del lenguaje Golang y C++, estos valores se incrementan desde 100 000 y 20 000 datos, respectivamente.
-                 \item  Los programas en lenguaje compilado (C++) presenta un mejor desempeño en cuanto se presenta mayor cantidad de datos que un programa en lenguaje interpretado (Python)
+                 \item  ssss
+                 \item	ssss
+                 \item Un árbol AVL se mantiene ordenado, pero hay mas rotaciones en las inserciones que en las eliminaciones, su costo para buscar, eliminar, insertar  es de O(Log n).
+                 \item  
         \end{itemize}
 
     \section{Referencias}
+  
 
 \end{document} 
