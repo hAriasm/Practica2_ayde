@@ -15,7 +15,8 @@
 \usepackage[normalem]{ulem}
 \usepackage{hyperref}
 \useunder{\uline}{\ul}{}
-
+\usepackage{svg}
+\usepackage{amsmath} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,36 +100,23 @@
         	\end{itemize}
     \section{Url GITHUB}
            Repositorio Github: \href{https://github.com/hAriasm/Practica2_ayed}{Práctica 2}
-	\section{Estructuras de Datos} 
+	\section{Estructuras de Datos}
         \subsection{BTree}
             \paragraph{}
    zzzzzzzzzz
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[width=12cm]{img/mergesort.png}
-                \caption{Estrategia que sigue algoritmo para ordenar una secuencia S de n elementos}
-                \label{fig:mergesort}
-            \end {figure} 
+
 
         \subsection{AVL}
-        
+
          El Merge Sort es un algoritmo recursivo bastante eficiente para ordenar un array, que tiene un orden de complejidad O(nlogn) al igual que Quick Sort. fue desarrollado en 1945 por John Von Neumann.
 
          El Merge Sort está basado en la técnica de diseño de algoritmos Divide y Vencerás, esta técnica consiste en dividir el problema a resolver en sub problemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente  pequeños o triviales.
-            
-         \subsubsection{Resultados del experimento}
-         
-            \begin{figure}[h!]
-                \centering
-                \includegraphics[width=12cm]{img/mergesort.png}
-                \caption{Estrategia que sigue algoritmo para ordenar una secuencia S de n elementos}
-                \label{fig:mergesort}
-            \end {figure}
+ 
 
- 
-    
- 
- 
+\begin{figure}
+    \centering
+    \includesvg[width=0.6\columnwidth](avltree-1)
+\end{figure}
     \section{Conclusiones}
         \begin{itemize}
                  \item  En las pruebas realizadas para el Algoritmo Quick Sort, se obtuvo tiempos de ejecución menores para el código desarrollado en lenguaje de programación Golang, y tiempos de mayor valor en la ejecución del código en lenguaje de programación Python.
