@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.16)  21 AUG 2022 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.16)  26 AUG 2022 21:37
 entering extended mode
 **./presentacionGrupo2.tex
 (presentacionGrupo2.tex
@@ -930,7 +930,7 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 169.
 
-Overfull \vbox (4.92886pt too high) detected at line 169
+Overfull \vbox (6.32938pt too high) detected at line 169
  []
 
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
@@ -1131,8 +1131,8 @@ Package rerunfilecheck Info: File `presentacionGrupo2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18100 strings out of 492895
- 348665 string characters out of 3133462
- 421003 words of memory out of 3000000
+ 348609 string characters out of 3133462
+ 421083 words of memory out of 3000000
  21531 multiletter control sequences out of 15000+200000
  20183 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1143,7 +1143,7 @@ ts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic
 /uhvro8a.pfb>
-Output written on presentacionGrupo2.pdf (12 pages, 471380 bytes).
+Output written on presentacionGrupo2.pdf (12 pages, 471598 bytes).
 PDF statistics:
  489 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
