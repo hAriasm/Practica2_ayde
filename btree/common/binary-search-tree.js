@@ -27,11 +27,11 @@ class BinarySearchTree{
     preOrder(Node) {
       if (Node != null){
         if(Node.left != null){
-            console.log(" "+Node.data+"--"+Node.left.data+";");
+            console.log(" "+Node.data+"->"+Node.left.data+";");
             this.preOrder(Node.left);
         }
         if(Node.right !== null){
-            console.log(" "+Node.data+"--"+Node.right.data+";");
+            console.log(" "+Node.data+"->"+Node.right.data+";");
             this.preOrder(Node.right);
         }
     }
