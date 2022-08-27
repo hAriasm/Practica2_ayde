@@ -1,35 +1,36 @@
 const { AVLTree } = require("./common/avl-tree");
 
-// Driver code
 var tree = new AVLTree();
 
-/* Constructing tree given in the above figure */
+tree.root = tree.insert(tree.root, 43);
+tree.root = tree.insert(tree.root, 18);
+tree.root = tree.insert(tree.root, 22);
 tree.root = tree.insert(tree.root, 9);
-tree.root = tree.insert(tree.root, 5);
-tree.root = tree.insert(tree.root, 10);
-tree.root = tree.insert(tree.root, 0);
+tree.root = tree.insert(tree.root, 21);
 tree.root = tree.insert(tree.root, 6);
-tree.root = tree.insert(tree.root, 11);
-tree.root = tree.insert(tree.root, -1);
-tree.root = tree.insert(tree.root, 1);
-tree.root = tree.insert(tree.root, 2);
+tree.root = tree.insert(tree.root, 8);
+tree.root = tree.insert(tree.root, 20);
+tree.root = tree.insert(tree.root, 63);
+tree.root = tree.insert(tree.root, 50);
+tree.root = tree.insert(tree.root, 62);
+tree.root = tree.insert(tree.root, 51);
 
 
 console.log(
-      "Preorder traversal of the" + "constructed AVL tree is <br>"
+      "Arbol inicial"
 );
 tree.preOrder(tree.root);
 
-tree.root = tree.deleteNode(tree.root, 10);
+let val = "50";
+tree.root = tree.deleteNode(tree.root, val);
 
 console.log(
-      "Preorder traversal of the" + "constructed AVL tree is <br>"
+      "Arbol despues de eliminar el nodo " + val
 );
 tree.preOrder(tree.root);
 
 
 
-let val = "10";
 console.log("buscando nodo " + val);
 let result;
 result = tree.searchNode(tree.root, val);

@@ -126,8 +126,8 @@ class AVLTree {
           temp = root;
           root = null;
         }
-        else 
-          root = temp; 
+        else
+          root = temp;
       }
       else {
 
@@ -169,7 +169,7 @@ class AVLTree {
     if (root == null)
       return root;
 
-    if (root.key == key) 
+    if (root.key == key)
       return root;
 
     else if (key < root.key)
@@ -183,10 +183,14 @@ class AVLTree {
 
   preOrder(node) {
     if (node != null) {
-      // document.write(node.key +"");
-      console.log(node.key + "");
-      this.preOrder(node.left);
-      this.preOrder(node.right);
+      if (node.left != null) {
+        console.log(node.key + " -- " + node.left.key + ";");
+        this.preOrder(node.left);
+      }
+      if (node.right != null) {
+        console.log(node.key + " -- " + node.right.key + ";");
+        this.preOrder(node.right);
+      }
     }
   }
 }
