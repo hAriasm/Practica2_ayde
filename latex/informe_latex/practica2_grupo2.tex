@@ -190,21 +190,85 @@
 
             \subsubsection{Resultados del experimento}
 
+
+
+    \section{Binary Search Tree}
+
+        Los árboles binarios son estructuras de datos muy similares a las listas doblemente enlazadas, en el sentido que tienen dos punteros que apuntan a otros elementos, pero no tienen una estructura lógica de tipo lineal o secuencial como aquellas, sino ramificada.  Tienen aspecto de árbol, de ahí su nombre.
+
+        Un árbol binario es una estructura de datos no lineal en la que cada nodo puede apuntar a uno o máximo a dos nodos. También se suele dar una definición recursiva que indica que es una estructura compuesta por un dato y dos árboles. Esto son definiciones simples. Este tipo de árbol se caracteriza porque tienen un vértice principal y de él se desprenden dos ramas. La rama izquierda y la rama derecha a las que también se les conoce como subárboles.
+
+        Una representación gráfica de la estructura general de un árbol binario se puede visualizar en la figura \ref{fig:b-tree}, que se presenta a continuación.
+        \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/estructura_arbol_binario.png}
+              \caption{Gráfica B-tree}
+              \label{fig:b-tree}
+            \end{figure} 
+        \subsection{Resultados}
         \begin{itemize}
-            \item   Árbol Principal
-            \item   Insertar dos nodos
-            \item   Borrar un nodo con dos hijos
-            \item   Borrar nodo raíz
-            \item   Búsqueda de un nodo
-            \item	Búsqueda del mínimo
-            \item	Búsqueda del máximo
+          \item Árbol Principal \\
+         En la siguiente imagen se puede observar la creación del árbol principal después de ejecutar el código.
+                  
+          \item Insertar dos nodos \\
+            Como resultado de la operación de Insertar, se ha añadido los nodos "93" y "105" lo cual se muestra en la en la figura \ref{fig:btree_insertando_2_nodos}.
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/btree_insertando_2_nodos.png}
+              \caption{btree insertando 2 nodos}
+              \label{fig:btree_insertando_2_nodos}
+            \end{figure}  
+          \item  Borrar un nodo con dos hijos
+            En la siguiente imagen se muestra el árbol, luego de borrar el nodo padre "99" se muestra en la en la figura \ref{fig:btree_delete_nodo_padre_2_hijos}.
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/btree_delete_nodo_padre_2_hijos.png}
+              \caption{btree delete 2 nodos}
+              \label{fig:btree_delete_nodo_padre_2_hijos}
+            \end{figure} 
+            
+            \item Borrar nodo raíz \\
+            A continuación se muestra el árbol, después de ejecutar la operación de borrar el nodo raíz "41" se muestra en la en la figura \ref{fig:btree_delete_nodo_raiz}.
+               \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/btree_delete_nodo_raiz.png}
+              \caption{btree delete nodo padre}
+              \label{fig:btree_delete_nodo_raiz}
+            \end{figure}  
+            \item Búsqueda de un nodo \\
+                En la siguiente imagen se muestra el resultado de la búsqueda del nodo "91" se muestra en la en la figura \ref{fig:btree_search}.
+         \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{img/btree_search.png}
+              \caption{btree search}
+              \label{fig:btree_search}
+            \end{figure} 
+           
+ 
+            \item Búsqueda del mínimo \\
+            El valor mínimo encontrado fue de "11", lo cual se muestra en la siguiente captura  se muestra en la en la figura \ref{fig:btree_min}.
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.3\textwidth]{img/btree_min.png}
+              \caption{btree mínimo}
+              \label{fig:btree_min}
+            \end{figure} 
+            \item Búsqueda del máximo \\
+                El valor máximo encontrado fue de "105", lo cual se muestra en la siguiente captura  se muestra en la en la figura \ref{fig:btree_max}.
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.3\textwidth]{img/btree_max.png}
+              \caption{btree mínimo}
+              \label{fig:btree_max}
+            \end{figure} 
         \end{itemize}
+  
+
     \section{Conclusiones}
         \begin{itemize}
                  \item Un árbol AVL se mantiene ordenado, pero hay mas rotaciones en las inserciones que en las eliminaciones, su costo para buscar, eliminar, insertar  es de O(Log n).
                  \item Funciona de manera casi instantánea incluso con grandes volúmenes de datos. Ello se debe principalmente a la característica equilibrada del árbol, lo que permite tener acceso a todos los elementos con el mismo número de etapas, y en segundo lugar, al crecimiento logarítmico de la profundidad del árbol. Eso significa que la profundidad del árbol crece lentamente en comparación al número de hojas. Hay índices reales con millones de registros que tienen una profundidad de cuatro o cinco. Es poco común encontrar una profundidad de seis
         \end{itemize}
-
     \section{Referencias}
   \begin{enumerate}
     \item González, A. H. (2013). Operaciones sobre árboles.
