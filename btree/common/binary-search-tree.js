@@ -29,11 +29,11 @@ class BinarySearchTree{
     inOrder(Node) {
       if (Node != null){
         if(Node.left != null){
-          this.output += "\n  " + Node.key + " -- " + Node.left.key + ";";
+          this.output += "\n  " + Node.data + " -- " + Node.left.data + ";";
           this.inOrder(Node.left);
         }
         if(Node.right !== null){
-          this.output += "\n  " + Node.key + " -- " + Node.right.key + ";";
+          this.output += "\n  " + Node.data + " -- " + Node.right.data + ";";
           this.inOrder(Node.right);
         }
       }
