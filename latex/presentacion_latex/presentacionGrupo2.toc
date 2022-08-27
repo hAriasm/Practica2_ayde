@@ -1,5 +1,2 @@
-\beamer@sectionintoc {1}{Caracter\IeC {\'\i }sticas}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Lenguaje usado}{3}{0}{1}
-\beamer@sectionintoc {2}{Algoritmos}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Quick Sort}{4}{0}{2}
-\beamer@subsectionintoc {2}{2}{Merge Sort}{6}{0}{2}
+\beamer@sectionintoc {1}{B-tree}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Insert}{3}{0}{1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.16)  26 AUG 2022 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.16)  27 AUG 2022 04:17
 entering extended mode
 **./presentacionGrupo2.tex
 (presentacionGrupo2.tex
@@ -930,125 +930,49 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 169.
 
-Overfull \vbox (6.32938pt too high) detected at line 169
+Overfull \vbox (4.92886pt too high) detected at line 169
  []
 
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 (Font)              scaled to size 4.0pt on input line 169.
-
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
 [1{C:/Users/Ivan Arias/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-(presentacionGrupo2.toc)
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[2
+(presentacionGrupo2.toc) [2
 
 ]
-<Images/caracteristicas.png, id=111, 607.26875pt x 284.06125pt>
-File: Images/caracteristicas.png Graphic file (type png)
-<use Images/caracteristicas.png>
-Package pdftex.def Info: Images/caracteristicas.png  used on input line 204.
-(pdftex.def)             Requested size: 232.59499pt x 108.79826pt.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 204.
-
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[3
-
- <./Images/caracteristicas.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 227.
+(Font)              scaled to size 10.0pt on input line 202.
+LaTeX Font Info:    Try loading font information for U+msa on input line 202.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 227.
+LaTeX Font Info:    Try loading font information for U+msb on input line 202.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 227.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 202.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 227.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 227.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 227.
-<Images/quickSort.png, id=142, 295.1025pt x 399.4925pt>
-File: Images/quickSort.png Graphic file (type png)
-<use Images/quickSort.png>
-Package pdftex.def Info: Images/quickSort.png  used on input line 227.
-(pdftex.def)             Requested size: 116.29749pt x 157.4351pt.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
+ [3
 
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[4
-
- <./Images/quickSort.png>]
-<Images/QuickSort_1.png, id=176, 462.528pt x 345.4506pt>
-File: Images/QuickSort_1.png Graphic file (type png)
-<use Images/QuickSort_1.png>
-Package pdftex.def Info: Images/QuickSort_1.png  used on input line 238.
-(pdftex.def)             Requested size: 232.59499pt x 173.72112pt.
-
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[5
-
- <./Images/QuickSort_1.png>]
-<Images/mergesort.png, id=209, 987.69pt x 735.74875pt>
-File: Images/mergesort.png Graphic file (type png)
-<use Images/mergesort.png>
-Package pdftex.def Info: Images/mergesort.png  used on input line 261.
-(pdftex.def)             Requested size: 116.29749pt x 86.6245pt.
-
-Overfull \vbox (35.02116pt too high) detected at line 261
- []
-
-
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[6
-
- <./Images/mergesort.png>]
-<Images/mergeSort_1.png, id=242, 462.528pt x 345.4506pt>
-File: Images/mergeSort_1.png Graphic file (type png)
-<use Images/mergeSort_1.png>
-Package pdftex.def Info: Images/mergeSort_1.png  used on input line 269.
-(pdftex.def)             Requested size: 232.59499pt x 173.72112pt.
-
-Overfull \hbox (1.9817pt too wide) has occurred while \output is active
- []\OT1/opensans-TLF/m/n/6 Caractersticas  
- []
-
-[7
-
- <./Images/mergeSort_1.png>]
+]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 284.
+(Font)              scaled to size 24.88pt on input line 220.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 284.
- [8
+(Font)              scaled to size 17.28pt on input line 220.
+ [4
 
 ]
 \tf@nav=\write6
@@ -1060,31 +984,28 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 \tf@snm=\write8
 \openout8 = `presentacionGrupo2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
- (presentacionGrupo2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+
+(presentacionGrupo2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `presentacionGrupo2.out' has not changed.
-(rerunfilecheck)             Checksum: F3D94FA1397CB63D0B7212BD61D1B1F7;284.
+(rerunfilecheck)             Checksum: D0CB10D06FB2D250D2A40348D2DD7C43;98.
  ) 
 Here is how much of TeX's memory you used:
- 18050 strings out of 492895
- 347769 string characters out of 3133462
- 420031 words of memory out of 3000000
- 21496 multiletter control sequences out of 15000+200000
- 20183 words of font info for 59 fonts, out of 3000000 for 9000
+ 17958 strings out of 492895
+ 345885 string characters out of 3133462
+ 418995 words of memory out of 3000000
+ 21424 multiletter control sequences out of 15000+200000
+ 17812 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,787b,718s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/opensans/a_n3lhbv.enc}<C:/Program Files/MiKTeX 2.9/fon
-ts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic
-/uhvro8a.pfb>
-Output written on presentacionGrupo2.pdf (8 pages, 315257 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/a_n3lhbv.enc}<C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/ascender/opensans/OpenSans-Regular.pfb>
+Output written on presentacionGrupo2.pdf (4 pages, 42266 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,30 +4,15 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Caracter\IeC {\'\i }sticas}{3}{Caracter\IeC {\'\i }sticas}{0}}
+\headcommand {\sectionentry {1}{B-tree}{3}{B-tree}{0}}
 \headcommand {\beamer@subsectionpages {3}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Lenguaje usado}}
-\headcommand {\slideentry {1}{1}{1}{3/3}{Lenguaje usado}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Insert}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Insert}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@sectionpages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\sectionentry {2}{Algoritmos}{4}{Algoritmos}{0}}
-\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Quick Sort}}
-\headcommand {\slideentry {2}{1}{1}{4/4}{Quick Sort}{0}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{Insert}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {2}{1}{2}{5/5}{Quick Sort}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{Merge Sort}}
-\headcommand {\slideentry {2}{2}{1}{6/6}{Merge Sort}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{2}{2}{7/7}{Merge Sort}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{2}{3}{8/8}{Merge Sort}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@partpages {1}{8}}
-\headcommand {\beamer@subsectionpages {6}{8}}
-\headcommand {\beamer@sectionpages {4}{8}}
-\headcommand {\beamer@documentpages {8}}
-\headcommand {\gdef \inserttotalframenumber {8}}
+\headcommand {\beamer@partpages {1}{4}}
+\headcommand {\beamer@subsectionpages {3}{4}}
+\headcommand {\beamer@sectionpages {3}{4}}
+\headcommand {\beamer@documentpages {4}}
+\headcommand {\gdef \inserttotalframenumber {4}}
