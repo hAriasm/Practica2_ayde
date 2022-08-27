@@ -1,6 +1,9 @@
 const { Node } = require('./node');
 
 class AVLTree {
+
+  output = "";
+
   constructor() {
     this.root = null;
   }
@@ -184,14 +187,19 @@ class AVLTree {
   preOrder(node) {
     if (node != null) {
       if (node.left != null) {
-        console.log("  " + node.key + " -- " + node.left.key + ";");
+        this.output += "\n  " + node.key + " -- " + node.left.key + ";";
         this.preOrder(node.left);
       }
       if (node.right != null) {
-        console.log("  " + node.key + " -- " + node.right.key + ";");
+        this.output += "\n  " + node.key + " -- " + node.right.key + ";";
         this.preOrder(node.right);
       }
     } 
+  }
+
+  print(node) {
+    this.output = "";
+    this.preOrder(node);
   }
 }
 

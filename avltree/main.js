@@ -1,5 +1,20 @@
 const { AVLTree } = require("./common/avl-tree");
 
+function exportDotFile(data) {
+      const fs = require('fs')
+      const uniqueFilename = require('unique-filename')
+      const randomTmpfile = uniqueFilename('../graph/', 'avltree') + '.dot'
+
+      data = "graph AVLTree {" + data + "\n}";
+
+      fs.writeFile(randomTmpfile, data, (err) => {
+            if (err) throw err;
+      })
+
+      console.log("archivo " + randomTmpfile + " generado exitosamente\n");
+}
+
+
 var tree = new AVLTree();
 
 tree.root = tree.insert(tree.root, 43);
@@ -15,23 +30,27 @@ tree.root = tree.insert(tree.root, 50);
 tree.root = tree.insert(tree.root, 62);
 
 console.log("Arbol inicial");
-tree.preOrder(tree.root);
+tree.print(tree.root);
+exportDotFile(tree.output);
 
 console.log("Insertando 51");
 tree.root = tree.insert(tree.root, 51);
-tree.preOrder(tree.root);
+tree.print(tree.root);
+exportDotFile(tree.output);
 
 let val = "18";
 console.log("Eliminando " + val);
 tree.root = tree.deleteNode(tree.root, val);
 console.log("Arbol despues de eliminar el nodo " + val);
-tree.preOrder(tree.root);
+tree.print(tree.root);
+exportDotFile(tree.output);
 
 val = "22";
 console.log("Eliminando " + val);
 tree.root = tree.deleteNode(tree.root, val);
 console.log("Arbol despues de eliminar el nodo " + val);
-tree.preOrder(tree.root);
+tree.print(tree.root);
+exportDotFile(tree.output);
 
 console.log("buscando nodo " + val);
 let result;
@@ -45,16 +64,3 @@ else
 console.log("Min: " + tree.minValueNode(tree.root).key);
 console.log("Max: " + tree.maxValueNode(tree.root).key);
 
-// Requiring fs module in which
-// writeFile function is defined.
-const fs = require('fs')
-
-// Data which will write in a file.
-let data = "Learning how to write in a file."
-
-// Write data in 'Output.txt' .
-fs.writeFile('Output.txt', data, (err) => {
-
-      // In case of a error throw err.
-      if (err) throw err;
-})
